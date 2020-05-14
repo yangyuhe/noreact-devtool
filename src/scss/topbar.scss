@@ -1,0 +1,31 @@
+@import './variables.scss';
+.topbar {
+    height: 48px;
+    line-height: 48px;
+    color: $themeColor;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+    padding: 0 10px;
+    .logo {
+    }
+    .version {
+        margin-right: auto;
+    }
+    .tab-item {
+        padding: 0 14px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        .iconfont {
+            font-size: 22px;
+            margin-right: 6px;
+        }
+        .name {
+        }
+        &.active {
+            border-bottom: 2px solid $themeColor;
+        }
+    }
+}

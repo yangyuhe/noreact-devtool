@@ -1,0 +1,28 @@
+.instances-container {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #eee;
+    .topbar {
+        width: 100%;
+    }
+
+    .instructure {
+        flex: 0 0 auto;
+        width: 50%;
+        border-right: 1px solid #eee;
+        box-sizing: border-box;
+        padding: 10px 20px;
+    }
+    .instance-detail-container {
+        flex: 0 0 auto;
+        width: 50%;
+        position: relative;
+        .nodata {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #aaa;
+        }
+    }
+}

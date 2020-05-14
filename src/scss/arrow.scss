@@ -1,0 +1,16 @@
+.arrow-container {
+    padding: 5px;
+    font-size: 0;
+    .arrow {
+        content: '';
+        display: inline-block;
+        border-width: 4px 0px 4px 8px;
+        border-color: transparent transparent transparent black;
+        border-style: solid;
+        width: 0;
+        height: 0;
+    }
+    &.open {
+        transform: rotate(90deg);
+    }
+}

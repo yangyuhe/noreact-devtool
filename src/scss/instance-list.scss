@@ -1,0 +1,39 @@
+@import './variables.scss';
+.instance-item {
+    &.active {
+        > .instance-item-name {
+            background: #e5f2ff;
+        }
+    }
+    .instance-item-name {
+        font-size: 14px;
+        line-height: normal;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        .arrow-container {
+            margin-left: -18px;
+        }
+        &:hover {
+            background: #e5f2ff;
+        }
+
+        .name-container {
+            flex: 1;
+            .name {
+                color: $themeColor;
+            }
+            .key {
+                color: #800080;
+                margin-left: 10px;
+            }
+            .id {
+                color: #444;
+                margin-right: 10px;
+            }
+        }
+    }
+    .instance-item-children {
+        padding: 0px 15px;
+    }
+}

@@ -1,0 +1,43 @@
+.instance-detail {
+    .instance-detail-item {
+        border-bottom: 1px solid #eee;
+        padding: 10px;
+        position: relative;
+        &:last-of-type {
+            border-bottom-width: 0;
+        }
+
+        .name {
+            color: #486887;
+            font-size: 15px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .item-container {
+            padding-left: 15px;
+            .data-container {
+                display: flex;
+                flex-wrap: wrap;
+                position: relative;
+                .arrow-container {
+                    position: absolute;
+                    top: 0;
+                    left: -18px;
+                }
+                .data-name {
+                    color: #881391;
+                    font-size: 14px;
+                    margin-right: 5px;
+                }
+                .data-value {
+                    color: #444;
+                    font-size: 14px;
+                }
+                .children-container {
+                    width: 100%;
+                    padding: 0px 10px;
+                }
+            }
+        }
+    }
+}
